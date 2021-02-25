@@ -7,6 +7,8 @@ parser = argparse.ArgumentParser(description='Config Parser')
 requiredNamed = parser.add_argument_group('required named arguments')
 requiredNamed.add_argument('--file', 
                     help='path to file', required=True)
+requiredNamed.add_argument('--outputpath', 
+                    help='path to output files', required=True)
 args = parser.parse_args()
 
 def loadFile():
@@ -39,7 +41,7 @@ def determineType(jsonObj, parent=None, parentList=[], nestDict=None):
         else:
             root['<a href=#' + key + '>' + key + '</a>']="String"
     if parent == None:
-        filename = 'configuration/config.md'
+        filename = args.outputpath + '/config.md'
         f = open(filename, "w")
         f.write("### JSON \n")
         f.write("<pre> \n")
@@ -51,7 +53,7 @@ def determineType(jsonObj, parent=None, parentList=[], nestDict=None):
         f.write("</pre> \n")
         f.close()
     else:
-        filename = "configuration/" + "/".join(parentList) + ".md"
+        filename = args.outputpath + "/" + "/".join(parentList) + ".md"
         print(filename)
         if not os.path.exists(os.path.dirname(filename)):
             try:
@@ -96,7 +98,7 @@ def writeParams(jsonObj, parent=None, parentList=[], nestDict=None):
         else:
             root.append('`' + key + '`  <a name="' + key + '"></a> \\' + '\nPlace holder text for what the parameter does \\' + '\n*Required*: Yes \\' + '\n*Type*: String \\' + '\n*Allowed Values*: Place holder for allowed values\n')
     if parent == None:
-        filename = 'configuration/config.md'
+        filename = args.outputpath + '/config.md'
         f = open(filename, "a")
         f.write('\n' + '\n')
         for row in root:
@@ -104,7 +106,7 @@ def writeParams(jsonObj, parent=None, parentList=[], nestDict=None):
         f.write("%s\n" % root)
         f.close()
     else:
-        filename = "configuration/" + "/".join(parentList) + ".md"
+        filename = args.outputpath + "/" + "/".join(parentList) + ".md"
         print(filename)
         if not os.path.exists(os.path.dirname(filename)):
             try:
