@@ -18,10 +18,10 @@
 
 
 <a name= "mandatory-account-configs" href="mandatory-account-configs.md">`mandatory-account-configs`</a> \
-
+Landing zones have a concept of core accounts that provides functions that span across many AWS accounts. For example, shared services, networking, security, logging etc. This section allows you to define your core accounts and customise there configuration. \
 *Required*: Yes \
 *Type*: mandatory-account-configs \
-Landing zones have a concept of core accounts that provides functions that span across many AWS accounts. For example, shared services, networking, security, logging etc. This section allows you to define your core accounts and customise there configuration. \
+
 <a name= "organizational-units" href="organizational-units.md">`organizational-units`</a> \
 This section deploys and configures the organisational units used by the accelerator.  \
 *Required*: Yes \
