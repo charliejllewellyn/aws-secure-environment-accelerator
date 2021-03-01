@@ -93,7 +93,7 @@ This roles gets created in every account and allows you to switch into this role
 *Allowed Values*: Place holder for allowed values
 
 <a name= "vpc-flow-logs" href="global-options/vpc-flow-logs.md">`vpc-flow-logs`</a> \
-G \
+Configuration for the collection of VPC flow logs \
 *Required*: Yes \
 *Type*: vpc-flow-logs \
 *Allowed Values*: Place holder for allowed values
@@ -105,7 +105,7 @@ Set to true when installing ASEA on top of ALZ \
 *Allowed Values*: True | False
 
 <a name= "aws-org-master" href="global-options/aws-org-master.md">`aws-org-master`</a> \
-Place holder text for what the parameter does \
+Provide the name of the ogranizational management account, this ties to the actual details of the account in mandatory-account-configs \
 *Required*: Yes \
 *Type*: aws-org-master \
 *Allowed Values*: Place holder for allowed values
@@ -117,19 +117,20 @@ Name of the different SCPs that will be used. This list maps each SPC's json wit
 *Allowed Values*: Place holder for allowed values
 
 <a name= "cloudwatch" href="global-options/cloudwatch.md">`cloudwatch`</a> \
-Place holder text for what the parameter does \
+Define the metrics that will be collected by Cloudwatch \
 *Required*: Yes \
 *Type*: cloudwatch \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "central-log-services" href="global-options/central-log-services.md">`central-log-services`</a> \
-Place holder text for what the parameter does \
+Configuration for log archive services \
 *Required*: Yes \
 *Type*: central-log-services \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "aws-config" href="global-options/aws-config.md">`aws-config`</a> \
-Place holder text for what the parameter does \
+Config rules for AWS Config, the list in this file is from the NIST 800-53 conformance package \
+other packages available at https://docs.aws.amazon.com/config/latest/developerguide/conformancepack-sample-templates.html \
 *Required*: Yes \
 *Type*: aws-config \
 *Allowed Values*: Place holder for allowed values
@@ -153,19 +154,19 @@ Suffix to add to created work-load accounts \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "iam-password-policies" href="global-options/iam-password-policies.md">`iam-password-policies`</a> \
-Place holder text for what the parameter does \
+Password policies for IAM \
 *Required*: Yes \
 *Type*: iam-password-policies \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "security-hub-frameworks" href="global-options/security-hub-frameworks.md">`security-hub-frameworks`</a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards.html \
 *Required*: Yes \
 *Type*: security-hub-frameworks \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "central-security-services" href="global-options/central-security-services.md">`central-security-services`</a> \
-Place holder text for what the parameter does \
+Security services to be provisioned in the security account \
 *Required*: Yes \
 *Type*: central-security-services \
 *Allowed Values*: Place holder for allowed values
@@ -207,7 +208,7 @@ Place holder text for what the parameter does \
 *Allowed Values*: Place holder for allowed values
 
 `supported-regions`  <a name="supported-regions"></a> \
-regions that will be monitored and logged by the core serviceskeep-default-vpc-regions \
+regions that will be monitored and logged by the core services \
 *Required*: Yes \
 *Type*: List \
 *Allowed Values*: Place holder for allowed values

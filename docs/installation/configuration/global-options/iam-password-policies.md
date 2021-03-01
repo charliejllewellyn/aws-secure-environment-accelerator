@@ -29,55 +29,55 @@ iam-password-policies:
 
 
 `hard-expiry`  <a name="hard-expiry"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: Boolean \
 *Allowed Values*: True | False
 
 `require-numbers`  <a name="require-numbers"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: Boolean \
 *Allowed Values*: True | False
 
 `minimum-password-length`  <a name="minimum-password-length"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
 
 `require-uppercase-characters`  <a name="require-uppercase-characters"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: Boolean \
 *Allowed Values*: True | False
 
 `max-password-age`  <a name="max-password-age"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
 
 `allow-users-to-change-password`  <a name="allow-users-to-change-password"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: Boolean \
 *Allowed Values*: True | False
 
 `require-symbols`  <a name="require-symbols"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: Boolean \
 *Allowed Values*: True | False
 
 `password-reuse-prevention`  <a name="password-reuse-prevention"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
 
 `require-lowercase-characters`  <a name="require-lowercase-characters"></a> \
-Place holder text for what the parameter does \
+https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccountPasswordPolicy.html \
 *Required*: Yes \
 *Type*: Boolean \
 *Allowed Values*: True | False
