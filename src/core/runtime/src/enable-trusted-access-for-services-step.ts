@@ -30,7 +30,7 @@ export const handler = async (input: EnableTrustedAccessForServicesInput) => {
 
   const securityAccountKey = config['global-options']['central-security-services'].account;
   const accounts = await loadAccounts(parametersTableName, dynamodb);
-  const securityAccount = accounts.find(a => a.key === securityAccountKey);
+  const securityAccount = accounts.find(a => a.name === securityAccountKey);
   if (!securityAccount) {
     console.warn('Cannot find account with type security');
     return;
