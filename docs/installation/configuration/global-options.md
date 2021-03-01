@@ -62,20 +62,20 @@ global-options:
 </pre> 
 
 
-`keep-default-vpc-regions`  <a name="keep-default-vpc-regions"></a> \
-Place holder text for what the parameter does \
+<a name="keep-default-vpc-regions"></a> \
+ASEA deletes default VPCs, this specifies regions where ASEA won't delete the default VPCs \
 *Required*: Yes \
 *Type*: List \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "additional-cwl-regions" href="global-options/additional-cwl-regions.md">`additional-cwl-regions`</a> \
-Place holder text for what the parameter does \
+Display metrics from different Regions  \
 *Required*: Yes \
-*Type*: additional-cwl-regions \
+*Type*: List\
 *Allowed Values*: Place holder for allowed values
 
 `default-s3-retention`  <a name="default-s3-retention"></a> \
-Place holder text for what the parameter does \
+Lifecycle policy for S3 \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
@@ -87,19 +87,19 @@ Place holder text for what the parameter does \
 *Allowed Values*: Place holder for allowed values
 
 `organization-admin-role`  <a name="organization-admin-role"></a> \
-Place holder text for what the parameter does \
+This roles gets created in every account and allows you to switch into this role from the root account for management \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "vpc-flow-logs" href="global-options/vpc-flow-logs.md">`vpc-flow-logs`</a> \
-Place holder text for what the parameter does \
+G \
 *Required*: Yes \
 *Type*: vpc-flow-logs \
 *Allowed Values*: Place holder for allowed values
 
 `alz-baseline`  <a name="alz-baseline"></a> \
-Place holder text for what the parameter does \
+Set to true when installing ASEA on top of ALZ \
 *Required*: Yes \
 *Type*: Boolean \
 *Allowed Values*: True | False
@@ -111,7 +111,7 @@ Place holder text for what the parameter does \
 *Allowed Values*: Place holder for allowed values
 
 `scps`  <a name="scps"></a> \
-Place holder text for what the parameter does \
+Name of the different SCPs that will be used. This list maps each SPC's json with a referentiable name \
 *Required*: Yes \
 *Type*: List \
 *Allowed Values*: Place holder for allowed values
@@ -135,7 +135,7 @@ Place holder text for what the parameter does \
 *Allowed Values*: Place holder for allowed values
 
 `default-cwl-retention`  <a name="default-cwl-retention"></a> \
-Place holder text for what the parameter does \
+Amount of days to retain CW logs \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
@@ -147,7 +147,7 @@ Place holder text for what the parameter does \
 *Allowed Values*: True | False
 
 `workloadaccounts-suffix`  <a name="workloadaccounts-suffix"></a> \
-Place holder text for what the parameter does \
+Suffix to add to created work-load accounts \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
@@ -171,31 +171,31 @@ Place holder text for what the parameter does \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "reports" href="global-options/reports.md">`reports`</a> \
-Place holder text for what the parameter does \
+Usage reports supported a this moment \
 *Required*: Yes \
 *Type*: reports \
 *Allowed Values*: Place holder for allowed values
 
 `ssm-automation`  <a name="ssm-automation"></a> \
-Place holder text for what the parameter does \
+For remediation actions to be invoked from Config-rules \
 *Required*: Yes \
 *Type*: List \
 *Allowed Values*: Place holder for allowed values
 
 `ignored-ous`  <a name="ignored-ous"></a> \
-Place holder text for what the parameter does \
+Write any your pre-existing OUs here, the ASEA need to be told explicitly about these in order to ignore them \
 *Required*: Yes \
 *Type*: List \
 *Allowed Values*: Place holder for allowed values
 
 <a name= "central-operations-services" href="global-options/central-operations-services.md">`central-operations-services`</a> \
-Place holder text for what the parameter does \
+Configuration for the Operations account \
 *Required*: Yes \
 *Type*: central-operations-services \
 *Allowed Values*: Place holder for allowed values
 
 `workloadaccounts-param-filename`  <a name="workloadaccounts-param-filename"></a> \
-Place holder text for what the parameter does \
+Configuration file for the workload accounts, this gives you the ability to split the config file into several files if you prefer to \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
@@ -207,13 +207,13 @@ Place holder text for what the parameter does \
 *Allowed Values*: Place holder for allowed values
 
 `supported-regions`  <a name="supported-regions"></a> \
-Place holder text for what the parameter does \
+regions that will be monitored and logged by the core serviceskeep-default-vpc-regions \
 *Required*: Yes \
 *Type*: List \
 *Allowed Values*: Place holder for allowed values
 
 `workloadaccounts-prefix`  <a name="workloadaccounts-prefix"></a> \
-Place holder text for what the parameter does \
+Prefix that will be added to workload account names \
 *Required*: Yes \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
