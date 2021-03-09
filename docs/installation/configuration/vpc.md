@@ -16,7 +16,7 @@
         "<a href=#region>region</a>": "String", 
         "<a href=#route-tables>route-tables</a>": "List", 
         "<a href=#security-groups>security-groups</a>": "List", 
-        "<a href=#subnets>subnets</a>": "List", 
+        "<a href=#subnets>subnets</a>": "List of subnets", 
         "<a href=#tgw-attach>tgw-attach</a>": "tgw-attach", 
         "<a href=#use-central-endpoints>use-central-endpoints</a>": "Boolean", 
         "<a href=#vgw>vgw</a>": "Boolean"
@@ -39,7 +39,7 @@ vpc:
     <a href=#region>region</a>: String
     <a href=#route-tables>route-tables</a>: List
     <a href=#security-groups>security-groups</a>: List
-    <a href=#subnets>subnets</a>: List
+    <a href=#subnets>subnets</a>: List ofsSubnets
     <a href=#tgw-attach>tgw-attach</a>: tgw-attach
     <a href=#use-central-endpoints>use-central-endpoints</a>: Boolean
     <a href=#vgw>vgw</a>: Boolean
@@ -124,11 +124,10 @@ Place holder text for what the parameter does \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
 
-`subnets`  <a name="subnets"></a> \
-Place holder text for what the parameter does \
+<a name="subnets" href="vpc/subnets.md">`subnets`</a> \
+Allows you to provide a list of subnets to create in the VPC. \
 *Required*: Yes \
-*Type*: List \
-*Allowed Values*: Place holder for allowed values
+*Type*: List of subnets\
 
 `cidr`  <a name="cidr"></a> \
 Place holder text for what the parameter does \
