@@ -5,6 +5,7 @@
         "<a href=#az>az</a>": "String", 
         "<a href=#cidr>cidr</a>": "String", 
         "<a href=#route-table>route-table</a>": "String"
+        "<a href=#share-to-ou-accounts>share-to-ou-accounts</a>": "Boolean"
     }
 }</pre> 
 ### YAML 
@@ -13,6 +14,7 @@ definitions:
     <a href=#az>az</a>: String
     <a href=#cidr>cidr</a>: String
     <a href=#route-table>route-table</a>: String
+    <a href=#share-to-ou-accounts>share-to-ou-accounts</a>: Boolean
 </pre> 
 
 
@@ -34,3 +36,8 @@ Place holder text for what the parameter does \
 *Type*: String \
 *Allowed Values*: Place holder for allowed values
 
+`share-to-ou-accounts`  <a name="share-to-ou-accounts"></a> \
+Place holder text for what the parameter does \
+*Required*: Yes \
+*Type*: Boolean \
+*Allowed Values*: Place holder for allowed values
